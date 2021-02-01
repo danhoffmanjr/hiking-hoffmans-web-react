@@ -1,18 +1,17 @@
+import { Grid } from "@material-ui/core";
 import React from "react";
+import { Fragment } from "react";
+import ApplicationBar from "../../features/app-bar/ApplicationBar";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <ApplicationBar />
+      <Grid container direction="row" justify="center" alignItems="center">
+        Welcome... trails...
+      </Grid>
+    </Fragment>
   );
 }
 
